@@ -1,0 +1,17 @@
+
+<div class="content-container">
+  <div>
+    <div
+      (click)="onImageClick(document)"
+      *ngFor="let document of documents">
+      <img [src]="document.image">
+    </div>
+  </div>
+
+  <h4 class="nothing-to-display-hint">Nothing to display. Scan or import some documents!</h4>
+</div>
+
+<div class="bottom-bar">
+  <button class="bottom-bar-button save-pdf" (click)="savePDF()">SAVE PDF</button>
+  <button class="bottom-bar-button save-tiff" (click)="saveTIFF()">SAVE TIFF</button>
+</div>
