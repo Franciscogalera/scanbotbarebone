@@ -68,7 +68,7 @@ export class DocumentScannerComponent implements OnInit {
 
   async onScanningDone() {
     this.sdk.disposeDocumentScanner();
-    await this.router.navigateByUrl("/");
+    await this.router.navigateByUrl("/home");
   }
 
 }
